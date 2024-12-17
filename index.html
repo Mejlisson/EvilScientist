@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <h1>Evil Scientist</h1>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="app">
+      <section id="form-section">
+        <h1>Create an Evil Scientist</h1>
+        <form id="scientist-form">
+          <input type="text" id="name" placeholder="Name" required />
+          <input type="number" id="age" placeholder="Age" required />
+          <input
+            type="henchmen"
+            id="henchmen"
+            placeholder="Henchmen"
+            required
+          />
+          <textarea id="description" placeholder="Descriotion"></textarea>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <section id="list-section">
+        <h1>Evil Scientists</h1>
+        <ul id="scientist-list"></ul>
+      </section>
+      <section id="detail-section">
+        <h1>Scientist Details</h1>
+        <div id="scientist-details">Select a scientist to see details.</div>
+      </section>
+    </div>
   </body>
 </html>
